@@ -1,0 +1,3 @@
+BIGL Vercel deployment trigger
+Updated: 9 August 2026
+Purpose: trigger the first production deployment after connecting the GitHub main branch to Vercel.
