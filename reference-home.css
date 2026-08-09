@@ -1,0 +1,52 @@
+/* BIGL home page — tuned to match approved reference layout */
+@media (min-width:1201px){
+  body{font-family:Arial,Helvetica,sans-serif}
+  .container{width:min(1495px,91.5%);margin:0 auto}
+  .topbar{height:45px;font-size:15px;display:flex;align-items:center}
+  .topbar .container{padding:0;align-items:center}
+  .site-header{position:relative;top:auto;box-shadow:none;background:#fff}
+  .nav-wrap{min-height:305px;display:grid;grid-template-columns:470px 1fr;column-gap:55px;align-items:center}
+  .brand{align-self:center;justify-self:start;width:455px;height:270px}
+  .brand-image{width:455px;height:270px;background-position:left center;background-size:contain}
+  .nav{justify-self:stretch;display:flex;align-items:center;justify-content:flex-end;gap:40px;font-size:16px;white-space:nowrap;padding-top:0}
+  .nav>a:not(.nav-cta){padding:22px 0 18px;position:relative}
+  .nav>a:first-child{color:#0aad69}
+  .nav>a:first-child:after{content:"";position:absolute;left:0;right:0;bottom:8px;height:2px;background:#12b97b}
+  .nav-cta{padding:17px 31px;border-radius:8px;background:#07195f;box-shadow:0 6px 18px rgba(7,25,95,.12)}
+
+  .hero{padding:50px 0 34px;min-height:570px;background:linear-gradient(105deg,#061653 0%,#0a2469 53%,#086f70 100%)}
+  .hero:after{content:"";position:absolute;right:2.2%;top:42px;width:235px;height:455px;opacity:.20;pointer-events:none;background-image:radial-gradient(circle,#68e2ba 2px,transparent 2.5px);background-size:12px 12px;mask-image:linear-gradient(150deg,transparent 0 5%,#000 18% 80%,transparent 97%);-webkit-mask-image:linear-gradient(150deg,transparent 0 5%,#000 18% 80%,transparent 97%);transform:rotate(-8deg);border-radius:45% 30% 50% 38%}
+  .hero-grid{grid-template-columns:minmax(0,820px) minmax(390px,440px);gap:80px;align-items:start;position:relative;z-index:1}
+  .hero-copy{padding-top:0}
+  .eyebrow{font-size:16px;letter-spacing:.065em;color:#12c981;margin-bottom:20px}
+  .hero h1{font-size:72px;line-height:1.02;letter-spacing:-.035em;margin:0 0 24px;font-weight:800}
+  .hero h1 span{display:block;color:#14bd72}
+  .hero-copy>p{font-size:22px;line-height:1.48;max-width:775px;margin:0;color:#fff}
+  .hero-actions{margin:29px 0 31px;gap:24px}
+  .hero-actions .btn{font-size:18px;padding:15px 28px;min-height:61px;border-radius:8px}
+  .btn-primary{background:#14c17a;color:#05254c}
+  .btn-secondary{padding-left:30px!important;padding-right:30px!important;border-color:#f0f4ff}
+  .hero-trust{margin-top:0;padding-top:21px;gap:0;border-top:1px solid rgba(255,255,255,.24)}
+  .hero-trust>div{position:relative;padding:0 28px 0 68px;min-height:65px;border-right:1px solid rgba(255,255,255,.20)}
+  .hero-trust>div:first-child{padding-left:68px}
+  .hero-trust>div:last-child{border-right:0}
+  .hero-trust>div:before{position:absolute;left:5px;top:1px;width:44px;height:44px;display:grid;place-items:center;color:#14c97f;border:3px solid #14c97f;border-radius:50%;font-size:24px;font-weight:700}
+  .hero-trust>div:nth-child(1):before{content:"◌"}
+  .hero-trust>div:nth-child(2):before{content:"▥";border-radius:7px}
+  .hero-trust>div:nth-child(3):before{content:"⊕"}
+  .hero-trust strong{font-size:16px;color:#fff;margin-bottom:3px}
+  .hero-trust span{font-size:13px;color:#fff}
+
+  .hero-card{margin-top:0;padding:31px 31px 26px;border-radius:17px;min-height:430px;background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.065));border:1px solid rgba(255,255,255,.34);box-shadow:0 18px 45px rgba(0,20,55,.16)}
+  .hero-card .card-label{font-size:16px;letter-spacing:.03em;color:#12ca79;display:block;margin-bottom:18px}
+  .hero-card h3{font-size:32px;line-height:1.18;margin:0 0 25px;color:#fff;font-weight:800}
+  .hero-card p{font-size:17px;line-height:1.62;margin:0;color:#fff}
+  .hero-card .card-line{margin:24px 0 24px;height:4px;background:linear-gradient(90deg,#12c67a 0 42%,#07111e 42% 63%,#f12d35 63% 100%)}
+}
+
+@media (min-width:901px) and (max-width:1200px){
+  .nav-wrap{min-height:150px}
+  .brand-image{width:340px;height:130px}
+  .nav{gap:16px;font-size:.88rem}
+  .hero-card{margin-top:55px}
+}
