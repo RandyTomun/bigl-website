@@ -1,0 +1,5 @@
+.nav-wrap{min-height:126px}.brand-image{width:430px;height:108px}.nav{gap:22px;font-size:.94rem}.site-header{background:rgba(255,255,255,.99)}
+@media(max-width:1200px){.brand-image{width:380px;height:96px}.nav{gap:16px;font-size:.88rem}}
+@media(max-width:1000px){.nav-wrap{min-height:108px}.brand-image{width:330px;height:88px}}
+@media(max-width:900px){.nav{top:108px}.brand-image{width:300px;height:80px}}
+@media(max-width:600px){.nav-wrap{min-height:92px}.nav{top:92px}.brand-image{width:250px;height:68px}}
