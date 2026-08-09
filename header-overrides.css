@@ -17,7 +17,104 @@ footer .footer-grid{grid-template-columns:1.2fr .8fr .8fr;align-items:start;gap:
 footer .footer-grid>div:first-child{max-width:520px}
 footer .footer-grid>div:first-child p{max-width:500px;margin-top:18px}
 
-@media(max-width:1200px){.brand-image{width:380px;height:96px}.nav{gap:16px;font-size:.88rem}.footer-logo.brand-image{width:420px;height:278px;background-size:94% auto}footer .footer-grid{gap:45px}}
-@media(max-width:1000px){.nav-wrap{min-height:108px}.brand-image{width:330px;height:88px}.footer-logo.brand-image{width:390px;height:258px}}
-@media(max-width:900px){.nav{top:108px}.brand-image{width:300px;height:80px}.footer-logo.brand-image{width:360px;height:238px;background-size:94% auto}footer .footer-grid{gap:30px}}
-@media(max-width:600px){.nav-wrap{min-height:92px}.nav{top:92px}.brand-image{width:250px;height:68px}.footer-logo.brand-image{width:330px;height:218px;background-size:94% auto}}
+@media(max-width:1200px){
+  .brand-image{width:380px;height:96px}
+  .nav{gap:16px;font-size:.88rem}
+  .footer-logo.brand-image{width:420px;height:278px;background-size:94% auto}
+  footer .footer-grid{gap:45px}
+}
+
+@media(max-width:1000px){
+  .nav-wrap{min-height:108px}
+  .brand-image{width:330px;height:88px}
+  .footer-logo.brand-image{width:390px;height:258px}
+}
+
+/* Tablet + phone layout */
+@media(max-width:900px){
+  html,body{overflow-x:hidden}
+  .container{width:min(100% - 36px,720px)}
+  .topbar{font-size:.76rem}
+  .topbar .container{display:none}
+
+  .site-header{position:sticky;top:0;z-index:999}
+  .nav-wrap{min-height:96px;display:flex!important;align-items:center;justify-content:space-between;gap:16px}
+  .brand{width:auto!important;height:auto!important;min-width:0}
+  .brand-image{width:260px!important;height:76px!important;background-position:left center!important;background-size:contain!important}
+  .menu-toggle{display:grid!important;place-items:center;width:46px;height:46px;flex:0 0 46px;border:1px solid #d9deea;border-radius:9px;background:#fff;font-size:1.55rem;line-height:1;cursor:pointer}
+  .nav{display:none!important;position:absolute!important;top:96px!important;left:0!important;right:0!important;background:#fff!important;padding:14px 18px 22px!important;box-shadow:0 18px 35px rgba(9,30,66,.14)!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;white-space:normal!important;font-size:1rem!important;border-top:1px solid #e6eaf0}
+  .nav.open{display:flex!important}
+  .nav a{display:block;width:100%;padding:13px 6px!important;border-bottom:1px solid #eef1f5}
+  .nav .nav-cta{margin-top:12px;text-align:center;border-bottom:0;padding:14px 18px!important}
+
+  .hero{padding:54px 0 48px!important;min-height:auto!important}
+  .hero:after{display:none!important}
+  .hero-grid{display:grid!important;grid-template-columns:1fr!important;gap:28px!important}
+  .hero-copy{padding:0!important}
+  .eyebrow{font-size:.78rem!important;letter-spacing:.08em!important;margin-bottom:14px!important}
+  .hero h1{font-size:clamp(2.7rem,11vw,4.4rem)!important;line-height:1.02!important;margin:0 0 20px!important;letter-spacing:-.035em!important}
+  .hero-copy>p{font-size:1.06rem!important;line-height:1.55!important;max-width:none!important}
+  .hero-actions{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;margin:24px 0!important}
+  .hero-actions .btn{width:100%;min-height:54px;font-size:1rem!important;padding:13px 18px!important}
+  .hero-trust{grid-template-columns:1fr!important;gap:0!important;padding-top:10px!important}
+  .hero-trust>div{padding:16px 0 16px 58px!important;border-right:0!important;border-bottom:1px solid rgba(255,255,255,.16)!important;min-height:0!important}
+  .hero-trust>div:last-child{border-bottom:0!important}
+  .hero-trust>div:before{left:0!important;top:15px!important;width:38px!important;height:38px!important;font-size:20px!important}
+  .hero-card{margin:0!important;min-height:0!important;padding:25px!important;width:100%!important}
+  .hero-card h3{font-size:1.65rem!important}
+  .hero-card p{font-size:1rem!important}
+
+  .page-hero{padding:50px 0!important}
+  .page-hero h1{font-size:clamp(2.25rem,9vw,3.4rem)!important}
+  .page-hero p{font-size:1rem!important}
+  .section{padding:60px 0!important}
+  .section-heading{margin-bottom:30px!important}
+  .split,.governance,.contact-grid{grid-template-columns:1fr!important;gap:32px!important}
+  .card-grid,.sector-grid,.impact-grid,.number-grid{grid-template-columns:1fr 1fr!important;gap:16px!important}
+  .service-card,.sector-card,.value-card,.impact-card,.number-box,.governance-card,.contact-card{padding:22px!important}
+  .table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{min-width:680px}
+
+  .cta{padding:48px 0!important}
+  .cta-wrap{display:grid!important;grid-template-columns:1fr!important;gap:24px!important;align-items:start!important}
+  .cta .btn{width:100%;max-width:300px}
+
+  footer{padding:46px 0 22px!important}
+  footer .footer-grid{grid-template-columns:1fr!important;gap:34px!important}
+  footer .footer-grid>div:first-child{max-width:none!important}
+  footer .footer-grid>div:first-child p{max-width:none!important;margin-top:16px!important}
+  .footer-logo.brand-image{width:min(100%,470px)!important;height:auto!important;aspect-ratio:470/310;background-size:94% auto!important;margin:0!important}
+  .footer-bottom{flex-direction:column!important;align-items:flex-start!important;gap:10px!important;margin-top:30px!important}
+}
+
+/* Phones */
+@media(max-width:600px){
+  .container{width:calc(100% - 28px)}
+  .nav-wrap{min-height:86px}
+  .brand-image{width:220px!important;height:66px!important}
+  .nav{top:86px!important}
+  .menu-toggle{width:42px;height:42px;flex-basis:42px;font-size:1.4rem}
+
+  .hero{padding:42px 0 40px!important}
+  .hero h1{font-size:clamp(2.45rem,13vw,3.7rem)!important}
+  .hero-copy>p{font-size:1rem!important}
+  .hero-card{padding:22px!important;border-radius:14px!important}
+  .hero-card h3{font-size:1.5rem!important}
+
+  h2{font-size:clamp(1.9rem,9vw,2.6rem)!important}
+  .page-hero{padding:42px 0!important}
+  .page-hero h1{font-size:clamp(2.15rem,11vw,3rem)!important}
+  .section{padding:50px 0!important}
+  .card-grid,.sector-grid,.impact-grid,.number-grid{grid-template-columns:1fr!important}
+  .service-card,.sector-card,.value-card,.impact-card,.number-box,.governance-card,.contact-card{padding:20px!important}
+
+  .footer-logo.brand-image{width:100%!important;max-width:390px!important;aspect-ratio:470/310}
+  footer h4{margin-top:0}
+}
+
+/* Very small phones */
+@media(max-width:380px){
+  .brand-image{width:190px!important;height:60px!important}
+  .hero h1{font-size:2.35rem!important}
+  .menu-toggle{width:40px;height:40px;flex-basis:40px}
+}
